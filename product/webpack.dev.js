@@ -7,13 +7,13 @@ module.exports = merge(baseConfig, {
   devServer: {
     hot: true,
     compress: true,
-    port: 9000,
+    port: 1234,
     open: true,
     proxy: {
-      "*": "http://localhost:18888"
+      "*": "http://localhost:1999"
     },
     before() {
-      serve.run(18888, "n");
+      serve.run(1999, "n");
     }
   }
 });

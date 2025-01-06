@@ -71,6 +71,7 @@ function initAll() {
       EACH_COUNT = data.cfgData.EACH_COUNT;
       COMPANY = data.cfgData.COMPANY;
       HIGHLIGHT_CELL = createHighlight();
+      console.log('@@@@@@@@@',HIGHLIGHT_CELL)
       basicData.prizes = prizes;
       setPrizes(prizes);
 
